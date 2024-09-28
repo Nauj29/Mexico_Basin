@@ -1,4 +1,4 @@
-# Dataset Hydraulics Units in Mexico Basin
+# Dataset Hydrogeological Units in Mexico Basin
 This dataset contains Hydrogeological Sections created with Python and Qgis in the Mexico Basin.
 
 ## Tabla de Contenidos
