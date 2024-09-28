@@ -5,7 +5,8 @@ This dataset contains Hydrogeological Sections created with Python and Qgis in t
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Project Structure](#project-structure)
-4. [Contact](#contact)
+4. [LICENSE](#license)
+5. [Contact](#contact)
 
 ## Installation
 
@@ -46,7 +47,20 @@ This dataset contains Hydrogeological Sections created with Python and Qgis in t
   ├── Sections.py               # Python script for processing sections
   ├── README.md                 # Instructions file
   ├── requirements.txt          # Project dependencies
+  ├── LICENSE                   # File License
+
   ```
+## LICENSE
+  Creative Commons Attribution 4.0 International License
+
+  You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+  Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses   you or your use.
+
+
 ## Contact
 jcmontanoc@comunidad.unam.mx
 
