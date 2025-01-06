@@ -1,11 +1,12 @@
-# Dataset Hydraulics Units in Mexico Basin
+# Dataset Hydrogeological Units in Mexico Basin
 This dataset contains Hydrogeological Sections created with Python and Qgis in the Mexico Basin.
 
 ## Tabla de Contenidos
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Project Structure](#project-structure)
-4. [Contact](#contact)
+4. [LICENSE](#license)
+5. [Contact](#contact)
 
 ## Installation
 
@@ -59,7 +60,20 @@ This dataset contains Hydrogeological Sections created with Python and Qgis in t
   ├── Azimuth.py                 # Python script for compute Azimut and Dip_direction
   ├── README.md                 # Instructions file
   ├── requirements.txt          # Project dependencies
+  ├── LICENSE                   # File License
+
   ```
+## LICENSE
+  Creative Commons Attribution 4.0 International License
+
+  You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+  Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses   you or your use. [DOI:10.5281/zenodo.13852434](https://doi.org/10.5281/zenodo.13852434)
+
+
 ## Contact
 jcmontanoc@comunidad.unam.mx
 
