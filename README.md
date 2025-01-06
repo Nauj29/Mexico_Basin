@@ -19,7 +19,7 @@ This dataset contains Hydrogeological Sections created with Python and Qgis in t
   pip install -r requirements.txt
 
 ## Usage
-  The shapefiles provided in this repository are intended for academic use. Researchers and students are encouraged to use the data for their studies, analyses, and educational projects. Proper attribution to       this repository is appreciated.
+  This dataset is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. It can be used for academic and research purposes only. Commercial use is not allowed without prior permission from the authors.
 
   ### Python Script for Creating Topographic Sections
   The `Sections.py` script extracts elevation data along designated lines and produces topographic profiles from a Digital Elevation Model (DEM) and specified line shapefiles.
@@ -30,12 +30,24 @@ This dataset contains Hydrogeological Sections created with Python and Qgis in t
     1. **Set Input Paths**: Modify the paths in the script to point to your input shapefile and DEM file.
     2. **Run the Script**: Execute the script using Python.
        ```bash
-       python Sections.py
+       python Sections.py```
+	   
+  ### Python Script for Compute Azimuth and Dip direction
+  The `Azimuth.py` script computes Azimuth and Dip direction of Faults from Shapefile type line.
+
+  ### How to use
+  This script can be used directly or as a library.
+
+    1. **Set Input Paths**: Modify the path in the script to point to your input shapefile.
+    2. **Run the Script**: Execute the script using Python.
+       ```bash
+       Azimuth.py```
 
 ## Project Structure
   ```plaintext
   Mexico_Basin/
   │
+  ├── Graphics_and_sources/      # Images and geological charts used as inputs and figures in the paper
   ├── Hydrogeological_Units/
   │   ├── lineal/               # Line shapefiles for hydrogeological units
   │   ├── Polygon/              # Polygon shapefiles for hydrogeological units
@@ -44,6 +56,7 @@ This dataset contains Hydrogeological Sections created with Python and Qgis in t
   ├── Topography/               # DEM or topography data
   │
   ├── Sections.py               # Python script for processing sections
+  ├── Azimuth.py                 # Python script for compute Azimut and Dip_direction
   ├── README.md                 # Instructions file
   ├── requirements.txt          # Project dependencies
   ```
