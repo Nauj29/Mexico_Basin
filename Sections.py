@@ -12,30 +12,28 @@ def get_crs_custom():
     Returns:
         CRS object: Custom CRS defined using WKT.
     """
-    crs_wkt = (s
-        'PROJCS["WGS_1984_ARC_System_Zone_01",'
-        'GEOGCS["WGS 84",'
-        'DATUM["WGS_1984",'
-        'SPHEROID["WGS 84",6378137,298.257223563,'
-        'AUTHORITY["EPSG","7030"]],'
-        'AUTHORITY["EPSG","6326"]],'
-        'PRIMEM["Greenwich",0,'
-        'AUTHORITY["EPSG","8901"]],'
-        'UNIT["degree",0.0174532925199433,'
-        'AUTHORITY["EPSG","9122"]],'
-        'AUTHORITY["EPSG","4326"]],'
-        'PROJECTION["Equirectangular"],'
-        'PARAMETER["standard_parallel_1",22.94791772],'
-        'PARAMETER["central_meridian",0],'
-        'PARAMETER["false_easting",0],'
-        'PARAMETER["false_northing",0],'
-        'UNIT["metre",1,'
-        'AUTHORITY["EPSG","9001"]],'
-        'AXIS["Easting",EAST],'
-        'AXIS["Northing",NORTH],'
-        'AUTHORITY["ESRI","102421"]]'
-    )
-    return CRS.from_string(crs_wkt)
+    crs_wkt = """PROJCS["WGS_1984_ARC_System_Zone_01",
+        GEOGCS["WGS 84",
+        DATUM["WGS_1984",
+        SPHEROID["WGS 84",6378137,298.257223563,
+        AUTHORITY["EPSG","7030"]],
+        AUTHORITY["EPSG","6326"]],
+        PRIMEM["Greenwich",0,
+        AUTHORITY["EPSG","8901"]],
+        UNIT["degree",0.0174532925199433,
+        AUTHORITY["EPSG","9122"]],
+        AUTHORITY["EPSG","4326"]],
+        PROJECTION["Equirectangular"],
+        PARAMETER["standard_parallel_1",22.94791772],
+        PARAMETER["central_meridian",0],
+        PARAMETER["false_easting",0],
+        PARAMETER["false_northing",0],
+        UNIT["metre",1,
+        AUTHORITY["EPSG","9001"]],
+        AXIS["Easting",EAST],
+        AXIS["Northing",NORTH],
+        AUTHORITY["ESRI","102421"]]"""
+    return CRS.from_wkt(crs_wkt)
 
 # Load the DEM (Digital Elevation Model)
 def load_dem(dem_path):
@@ -170,5 +168,5 @@ def process_profiles(shapefile_path, dem_path, output_dir):
 if __name__ == "__main__":
     shapefile_path = 'Surface/Sections.shp'  # Input shapefile
     dem_path = 'Raster/cdmx.tif'  # Input DEM
-    output_dir = 'Borrar' # cambiar despues a topography # Directory to save profiles
+    output_dir = 'Topography' # cambiar despues a topography # Directory to save profiles
     process_profiles(shapefile_path, dem_path, output_dir)
